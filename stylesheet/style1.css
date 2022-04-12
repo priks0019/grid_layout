@@ -137,40 +137,41 @@ body {
   background: #648880;
   font: 300 22px "teko";
 }
-.container {
-  display: flex;
-  margin: 0 auto;
-  width: 96%;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto 10em; */
-}
-
 a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
-h1 {
-  font-size: 44px;
+a:hover {
+  color: #243632;
 }
-
-/* --------------header----------------------- */
+/* ----------primary-header ----------- */
 .primary-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* ------------------Logo--------------------- */
-.logo {
-  color: #c6fff3;
-  border-top: 2px solid #71ada0;
-  line-height: 1em;
-}
-
-/* ----------------Navigation----------------- */
-.primary-nav {
-  font-size: 1em;
-  font-weight: 200;
-  word-spacing: 1em;
+  background: #293f50;
+  justify-content: space-around;
   letter-spacing: 0.1em;
+  font-style: oblique;
   text-transform: uppercase;
+}
+.logo {
+  border-top: 0.1em solid #fff;
+  font-size: 40px;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.primary-nav {
+  padding: 2em;
+  justify-content: end;
+  word-spacing: 1em;
+}
+/* ------------primary-footer----------- */
+.primary-footer {
+  display: flex;
+  font-style: oblique;
+  word-spacing: 2em;
+  justify-content: center;
+  background: #293f50;
+}
+.rights {
+  padding-right: 20em;
+  word-spacing: normal;
 }
